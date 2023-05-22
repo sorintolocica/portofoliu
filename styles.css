@@ -16,12 +16,18 @@ html {
 
 /* HEADER */
 .header-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1300px;
   margin: auto;
   padding: 20px;
+}
+
+.logo {
+  position: relative;
+  z-index: 2;
 }
 
 button {
@@ -34,15 +40,9 @@ button {
 
 /* HERO */
 .hero {
+  position: relative;
+  z-index: 1;
   text-align: center;
-  height: 60vh;
-  background: #181f26;
-  margin-bottom: 80px;
-  margin-top: -70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   padding: 20px;
 }
 
@@ -169,5 +169,78 @@ h2 {
 
   .projects ul li {
     width: 100%;
+  }
+
+  /* Additional Styles for Mobile */
+  html {
+    font-size: 14px;
+  }
+
+  .header-wrapper {
+    padding: 10px;
+  }
+
+  button {
+    padding: 4px 10px;
+  }
+
+  .hero {
+    height: auto;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    max-width: 90%;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-width: 3px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .about-wrapper,
+  .project-wrapper,
+  .socials-wrapper {
+    margin: 40px auto;
+    padding: 10px;
+  }
+
+  .about-wrapper .skills {
+    margin-top: 20px;
+  }
+
+  .about-wrapper .skills ul li {
+    margin: 5px;
+    font-size: 0.9rem;
+  }
+
+  .projects ul li {
+    margin: 10px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .projects ul li img {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .socials-wrapper .social-icons img {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 8px;
   }
 }
